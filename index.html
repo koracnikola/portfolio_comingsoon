@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon | Nikola Korać</title>
+    <meta name="description" content="This site is currently under development. Please check back later.">
+    
+    <!-- Google Fonts - Geologica -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Geologica', sans-serif;
+            color: #333;
+            line-height: 1.6;
+            background-color: #fff;
+        }
+        
+        /* Layout */
+        .container {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+            text-align: center;
+        }
+        
+        .content {
+            max-width: 600px;
+            width: 100%;
+            margin: 0 auto;
+        }
+        
+        /* Typography */
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+        }
+        
+        p {
+            font-size: 1.125rem;
+            color: #666;
+            margin-bottom: 2rem;
+        }
+        
+        /* Divider */
+        .divider {
+            height: 3px;
+            width: 80px;
+            background-color: #000;
+            margin: 0 auto 2rem;
+        }
+        
+        /* Button */
+        .button {
+            display: inline-block;
+            padding: 0.75rem 2rem;
+            border: 2px solid #000;
+            color: #000;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            margin-top: 2rem;
+        }
+        
+        .button:hover {
+            background-color: #000;
+            color: #fff;
+        }
+        
+        /* Footer */
+        .footer {
+            margin-top: 4rem;
+            font-size: 0.875rem;
+            color: #888;
+        }
+        
+        /* Responsive */
+        @media (max-width: 640px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <!-- If you have a logo -->
+            <img src="logo.svg" alt="Logo" style="height: 60px; margin-bottom: 2rem;">
+            
+            <h1>Coming Soon</h1>
+            
+            
+            <!-- Optional: Add a return to home link if there's a working homepage -->
+            <!-- <a href="/" class="button">Visit Homepage</a> -->
+            
+            <div class="footer">
+                &copy; <%= new Date().getFullYear() %> Nikola Korać. All rights reserved.
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Update copyright year automatically
+        document.querySelector('.footer').innerHTML = 
+            '&copy; ' + new Date().getFullYear() + ' Nikola Korać. All rights reserved.';
+    </script>
+</body>
+</html>
